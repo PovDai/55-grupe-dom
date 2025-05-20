@@ -1,89 +1,42 @@
-const titleDOM=document.querySelector('title')
+const titleDOM=document.querySelector('title');
 const h1DOM=document.querySelector('h1')
-h1DOM.textContent='Pomidoras'
-h1DOM.style.width='200px'
-const title='Pomidoras'
+h1DOM.textContent='Pomidoras' // priskiriam nauja reiksme tekstui
+h1DOM.style.width='200px' // priskiriame nauja didi plotui tiesiogiai.
+const title='Pomidoras' // kaip kintamasis kuri galima priskirti kitai reiksmei. 
 
 let time=0;
-
 function changeTitle(){
-    time++;
+
+    time++
     if(time%2===0){
-titleDOM.textContent=`Document ${time}`
-}else{
-   
-    titleDOM.textContent=`${title} (${time})`
+        titleDOM.textContent=`Document ${time}`
+    }else{
+        titleDOM.textContent=`${title} ${time}`
+  if (time > 6) { /// kai pasieks 6 karta sustabdys 
+        clearInterval(timer);// taip sustabdome intervalas 
+    }
 }
-}
 
-
-const timer= setTimeout(changeTitle,1000);
-
-/*
+const timer= setTimeout(changeTitle,1000)
 
 function changeColor(){
 
-time++
-if(time%2===0){
-h1DOM.classList.add('zuikio-darzo-error')
-}else{
-    h1DOM.style.backgroundColor="white"
-}
-}
-
-setInterval(changeColor,1000);
-
-
-*/
-
-const liDOM=document.querySelectorAll('li')
-
-const vegetables=['Pomidoras','Agurkas','Svogunas','Bulve']
-
-for(let i=0;i<liDOM.length;i++){
-    liDOM[i].textContent=vegetables[i] ? vegetables[i]:"Error"
-    
-    if(vegetables[i]){
-    liDOM[i].style.backgroundColor='green'
-    liDOM[i].style.width='200px'
-    } else{
-    liDOM[i].style.fontSize='5rem'
-    liDOM[i].style.width='100px'
-    liDOM[i].classList.add('zuikio-darzo-error')
-}
-}
-
-const titleDOM = document.querySelector('title');
-const h1DOM = document.querySelector('h1');
-const title = 'Zuikio daržas';
-
-h1DOM.textContent = title;
-h1DOM.style.backgroundColor = 'yellow';
-h1DOM.style.fontSize = '2rem';
-
-let time = 0;
-
-function changeTitle() {
-    time++;
-
-
-    if (time % 2 === 0) {
-        titleDOM.textContent = `Document (${time})`;
-    } else {
-        titleDOM.textContent = `${title} (${time})`;
-    }
-
-    if (time > 6) {
-        clearInterval(timer);
+    time++
+    if(time%2===0){
+        h1DOM.classList.add('zuikio-darzo-error')
+    }else{
+        h1DOM.style.backgroundColor='red'
     }
 }
+setInterval(changeColor,1000)
 
-const timer = setInterval(changeTitle, 1000);
+
 
 const liListDOM = document.querySelectorAll('li');
+
 const vegetables = ['pomidoras', 'agurkas', 'svogūnas', 'bulvė', 'dobiliukai'];
 
-let index = 0;
+let index = 0; // nes nebuvo jokio indekso. 
 
 for (const liDOM of liListDOM) {
     liDOM.textContent = vegetables[index] ? vegetables[index] : 'error';
@@ -94,8 +47,20 @@ for (const liDOM of liListDOM) {
         liDOM.classList.add('zuikio-darzo-error');
     }
 
-    index++;
+    index++;// nes reikia kaip per cikla didintu per 1 kaskarta. 
 }
+
+
+
+const titleDOM = document.querySelector('title');
+const h1DOM = document.querySelector('h1');
+const title = 'Zuikio daržas';
+
+h1DOM.textContent = title;
+h1DOM.style.backgroundColor = 'yellow';
+h1DOM.style.fontSize = '2rem';
+
+
 
 
 

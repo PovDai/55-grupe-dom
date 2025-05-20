@@ -1,12 +1,12 @@
-document.querySelector('title').textContent="Spalvos"
+document.querySelector('title').textContent = 'Spalvos';
 
-const colors=['yellow','red','green','blue','orange','black']
+const colors = ['yellow', 'red', 'green', 'blue', 'orange', 'aqua'];
+const ulDOM = document.querySelector('.colors');
 
-const ulDOM=document.querySelector('.colors');
+ulDOM.innerHTML = ''; 
 
-ulDOM.innerHTML='';
+for (const color of colors){
+ ulDOM.innerHTML += `<li style="background-color:${color};">Spalva:${color} </li>`;
+}   
 
-for(const color of colors){
-    ulDOM.innerHTML+=`<li style="background-color: ${color};">Spalva : ${color}</li>`
-}
 
