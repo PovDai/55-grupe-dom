@@ -1,4 +1,4 @@
-const formDOM=document.forms[0];
+const formDOM=document.forms[0];/// paieska tiesiogiai formose. 
 const inputDOM=document.getElementById('task');
 const listDOM=document.querySelector('.list');
 
@@ -24,5 +24,6 @@ for(const btnDOM of deleteBtnListDOM){ // EINAME PER JO CIKLA , NES GALI BUTI PR
     });
 }
 });
+
 
 
