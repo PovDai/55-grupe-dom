@@ -1,5 +1,5 @@
-import { headeris } from"./headeris.js";
-headeris();
+import { header } from"./header.js";
+header();
 
 const listDOM = document.querySelector('.list');
 

@@ -1,5 +1,5 @@
-import { headeris } from"./headeris.js";
-headeris();
+import { header } from"./header.js";
+header();
 const btnDOM=document.querySelector('.click-me button')
 const pDOM=document.querySelector('.click-me p')
 

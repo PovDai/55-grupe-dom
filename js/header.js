@@ -1,4 +1,5 @@
-export function headeris(isMainPage = false) { /// reikalinga eilute, jeigu nesikrauna pagrindinis psl. 
+
+export function header(isMainPage = false) { /// reikalinga eilute, jeigu nesikrauna pagrindinis psl. 
     const path = isMainPage ? './' : '../'; // jeigu reikia sukuriam kintamiji. kuris kaitalioja pagal psl buvima.Jeigu nekrauna padeda taska arba du taskus. 
 
     document.body.insertAdjacentHTML('afterbegin', `
@@ -13,6 +14,8 @@ export function headeris(isMainPage = false) { /// reikalinga eilute, jeigu nesi
                 <a href="${path}add-todo/">Add todo</a>
                 <a href="${path}todo/">Todo</a>
                 <a href="${path}todo-better/">Todo better</a>
+                <a href="${path}darzas-test/">DARZAS TEST</a>
             </nav>
         </header>`);
 }
+

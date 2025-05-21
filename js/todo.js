@@ -1,5 +1,6 @@
-import {headeris} from"./headeris.js";
-headeris();
+import {header} from"./header.js";
+header();
+
 const formDOM=document.forms[0];/// paieska tiesiogiai formose. 
 const inputDOM=document.getElementById('task');
 const listDOM=document.querySelector('.list');

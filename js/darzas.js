@@ -1,6 +1,6 @@
-import { headeris } from "./header.js";
+import { header } from "./header.js";
 
-headeris();
+header();
 
 const titleDOM = document.querySelector('title');
 const h1DOM = document.querySelector('h1');

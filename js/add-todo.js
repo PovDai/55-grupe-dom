@@ -1,5 +1,7 @@
-import { headeris } from"./headeris.js";
-headeris();
+import { header } from"./header.js";
+header();
+
+
 const formDOM=document.querySelector('form')
 const btnDOM=formDOM.querySelector('button'); /// galima tiesiai is formos pasiimti ne is document, jeigu turime forma. 
 const inputDOM=formDOM.querySelector('input');
@@ -17,7 +19,8 @@ formDOM.addEventListener('submit', event=>{// reikia rasyti 'submit' nes toks my
     <p>${inputDOM.value} </p>  
     </div>`;
     inputDOM.value=''; /// kai reikia parasius istrinti eilute kad butu galima vel rasyti. 
-    // inputDOM.value // reikalingas kad irasysiys i inputa kazka jis sugeneruotu ta teksta ir dar skaiciu kelinta eilute. 
+    // inputDOM.value // reikalingas kad irasys i inputa kazka jis sugeneruotu ta teksta ir dar skaiciu kelinta eilute. 
 });
+
 
 

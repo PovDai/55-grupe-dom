@@ -1,10 +1,12 @@
-import { headeris } from"./headeris.js";
-headeris();
+import { header } from "./header.js";
 
-const btnDOM = document.getElementById('add');
-const listDOM = document.querySelector('.block-list');
+header();
 
-btnDOM.addEventListener('click', () => {
-    listDOM.innerHTML += '<div class="block">Sveiki</div>';
+const btnDOM=document.getElementById('add');
+const liDOM=document.querySelector('.block-list');
+
+btnDOM.addEventListener('click',(event)=>{
+    event.preventDefault();
+    liDOM.innerHTML+=`<div class="block"></div>`
 });
 
