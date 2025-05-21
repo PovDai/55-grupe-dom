@@ -1,3 +1,5 @@
+import {headeris} from"./headeris.js";
+headeris();
 const formDOM=document.querySelector('form')
 const btnDOM=formDOM.querySelector('button'); /// galima tiesiai is formos pasiimti ne is document, jeigu turime forma. 
 const inputDOM=formDOM.querySelector('input');

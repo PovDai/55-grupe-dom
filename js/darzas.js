@@ -1,8 +1,10 @@
+import {headeris} from"./headeris.js";
+headeris();
+
 const titleDOM=document.querySelector('title');
 const h1DOM=document.querySelector('h1')
 h1DOM.textContent='Pomidoras' // priskiriam nauja reiksme tekstui
 h1DOM.style.width='200px' // priskiriame nauja didi plotui tiesiogiai.
-const title='Pomidoras' // kaip kintamasis kuri galima priskirti kitai reiksmei. 
 
 let time=0;
 function changeTitle(){
@@ -53,9 +55,9 @@ for (const liDOM of liListDOM) {
 
 
 
-const titleDOM = document.querySelector('title');
-const h1DOM = document.querySelector('h1');
-const title = 'Zuikio daržas';
+let titleDOM1 = document.querySelector('title');
+let h1DOM = document.querySelector('h1');
+let title = 'Zuikio daržas';
 
 h1DOM.textContent = title;
 h1DOM.style.backgroundColor = 'yellow';

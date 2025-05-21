@@ -1,3 +1,6 @@
+import {headeris} from"./headeris.js";
+headeris(true); /// reikalingi eilute, jeigu mainas
+
 const mainDOM = document.getElementsByTagName('main');
 const h1MainDOM = mainDOM[0].getElementsByTagName('h1');
 const firstH1InMain = h1MainDOM[0];

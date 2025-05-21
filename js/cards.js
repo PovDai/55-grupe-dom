@@ -1,5 +1,7 @@
-const listDOM = document.querySelector('.list');
+import {headeris} from"./headeris.js";
+headeris();
 
+const listDOM = document.querySelector('.list');
 
 const data = [
     {

@@ -1,3 +1,6 @@
+import {headeris} from"./headeris.js";
+headeris();
+
 document.querySelector('title').textContent = 'Spalvos';
 
 const colors = ['yellow', 'red', 'green', 'blue', 'orange', 'aqua'];

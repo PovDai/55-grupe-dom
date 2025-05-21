@@ -1,3 +1,6 @@
+import {headeris} from"./headeris.js";
+headeris();
+
 const btnDOM = document.getElementById('add');
 const listDOM = document.querySelector('.block-list');
 
