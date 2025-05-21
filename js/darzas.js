@@ -16,6 +16,7 @@ function changeTitle(){
         clearInterval(timer);// taip sustabdome intervalas 
     }
 }
+}
 
 const timer= setTimeout(changeTitle,1000)
 
