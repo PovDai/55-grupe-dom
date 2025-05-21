@@ -1,4 +1,4 @@
-import {headeris} from"./headeris.js";
+import { headeris } from"./headeris.js";
 headeris();
 
 document.querySelector('title').textContent = 'Spalvos';

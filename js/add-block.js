@@ -1,4 +1,4 @@
-import {headeris} from"./headeris.js";
+import { headeris } from"./headeris.js";
 headeris();
 
 const btnDOM = document.getElementById('add');

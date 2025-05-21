@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/todo-better.css">
 </head>
 
 <body>
     <main>
-        <h1>Spalvos</h1>
+        <h1>Task planner (0)</h1>
 
-        <ul class="colors">
-            <li>aaaaaaaaaaa</li>
-            <li>bbbbbb</li>
-            <li>cccccccc</li>
-        </ul>
+        <form class="form">
+            <label for="task">Task</label>
+            <input id="task" placeholder="Your task" type="text" required>
+            <button type="submit">Add</button>
+        </form>
+
+        <div class="list"></div>
     </main>
 
     <script src="../js/todo-better.js" type="module"></script>

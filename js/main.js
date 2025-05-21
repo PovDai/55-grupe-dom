@@ -1,4 +1,4 @@
-import {headeris} from"./headeris.js";
+import { headeris } from"./headeris.js";
 headeris(true); /// reikalingi eilute, jeigu mainas
 
 const mainDOM = document.getElementsByTagName('main');
