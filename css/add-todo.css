@@ -22,3 +22,19 @@ button {
   padding: 0.5em;
   background-color: #ccc;
 }
+.mano p:first-child{
+  width: 3rem;
+  height: 4rem;
+  padding: 0.5em;
+  background-color: #ccc;
+  border: solid 3px red;
+
+}
+.mano p:last-child{
+    width: 30rem;
+  height: 4rem;
+  padding: 0.5em;
+  background-color: green;
+  border: solid 3px red;
+
+}
