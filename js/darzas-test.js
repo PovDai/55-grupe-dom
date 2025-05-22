@@ -37,7 +37,7 @@ for (const liDOM of listDOM) {
     if (vegetables[index]) {
         liDOM.classList.add('zuikio-darzove');
     } else {
-        liDOM.classList.add('zuikio-darzo-error');
+        liDOM.classList.add('block');
         liDOM.insertAdjacentHTML('afterend',`<p>sadsdasdasdasdsadasd<p>`)
         liDOM.innerHTML='Sveiki gyvi';
     }
@@ -50,8 +50,11 @@ const btnDOM=document.querySelector('.button')
 
 let count=0;
 btnDOM.addEventListener('click',()=>{
-     pDOM.insertAdjacentHTML('afterend',`   ${pDOM.textContent=count}`)
-    pDOM.innerHTML+=pDOM.textContent;
+     pDOM.insertAdjacentHTML('beforebegin',`   ${pDOM.textContent=count}`)
+    pDOM.innerHTML+=`<div class="block">
+                <p >${count}</p>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, sequi.</p>
+            </div>`
 
     count++
 })

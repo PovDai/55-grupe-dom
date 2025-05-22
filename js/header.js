@@ -15,6 +15,9 @@ export function header(isMainPage = false) { /// reikalinga eilute, jeigu nesikr
                 <a href="${path}todo/">Todo</a>
                 <a href="${path}todo-better/">Todo better</a>
                 <a href="${path}darzas-test/">DARZAS TEST</a>
+                <a href="${path}krepsinis/">Krepsinis</a>
+                <a href="${path}krepsinis-mandrai/">Krepsinis-mandrai</a>
+                <a href="${path}krepsinis-kietai/">Krepsinis-kietai</a>
             </nav>
         </header>`);
 }
