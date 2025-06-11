@@ -58,7 +58,7 @@ form1DOM.addEventListener('submit',(event)=>{
                     <div class="index1">${laikrodis}</div>
                     <button class="btn1" type="button">Delete</button>
                 </div>
-                <div class="content1">${input1DOM.value}</div>
+                <div class="content1">${input1DOM.value=eval(input1DOM.value)}</div>
             </div> `+list1DOM.innerHTML;
      input1DOM.value='';
 

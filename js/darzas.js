@@ -26,7 +26,6 @@ function changeTitle() {
         clearInterval(timer);
     }
 }
-
 const timer = setInterval(changeTitle, 1000);
 
 const liListDOM = document.querySelectorAll('li');
@@ -42,8 +41,7 @@ for (const liDOM of liListDOM) {
     } else {
         liDOM.classList.add('zuikio-darzo-error');
     }
-
-    index++;
+index++;
 }
 
 
